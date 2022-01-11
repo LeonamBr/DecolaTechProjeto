@@ -30,8 +30,8 @@ namespace Desafio.Decola.Tech
 
             retorno += "Genero: " + this.Genero + Environment.NewLine;
             retorno += "Nome: " + this.nome + Environment.NewLine;
-            retorno += "Dercricao: " + this.descricao + Environment.NewLine;
-            retorno += "Ano de Laancamento: " + this.ano + Environment.NewLine;
+            retorno += "Descricao: " + this.descricao + Environment.NewLine;
+            retorno += "Ano de Lançamento: " + this.ano + Environment.NewLine;
 
             return retorno;
         }

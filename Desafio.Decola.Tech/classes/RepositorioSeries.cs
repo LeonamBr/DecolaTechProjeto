@@ -9,7 +9,14 @@ namespace Desafio.Decola.Tech
         private Dictionary <int , Series> DicionarioDeSeries = new Dictionary<int, Series>(); 
         public void Excluir(int chave)
         {
+            if (DicionarioDeSeries.ContainsKey(chave))
+            {
             DicionarioDeSeries.Remove(chave);
+            }
+            else
+            {
+                 throw new System.IndexOutOfRangeException();
+            }
         }
 
         public void Inserir(int chave, Series entidade)
@@ -22,11 +29,11 @@ namespace Desafio.Decola.Tech
             return DicionarioDeSeries;
         }
 
-        public int NextID(Dictionary <int, string> U)
+        public int NextID(Dictionary <int, Series> U)
         {
             int i=0;
             bool x=true;
-            while (!x)
+            while (x)
             {
                  x = U.ContainsKey(i);
                  if(x == false)

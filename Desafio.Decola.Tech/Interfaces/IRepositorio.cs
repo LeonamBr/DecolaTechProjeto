@@ -13,7 +13,7 @@ namespace Desafio.Decola.Tech.interfaces
 
         void Update(int chave, U entidade);
 
-        int NextID(Dictionary <int, string> U);
+        int NextID(Dictionary <int, Series> U);
 
     }
 }
